@@ -2,7 +2,6 @@
 #ifndef LINUX_UID16_H
 #define LINUX_UID16_H
 
-long __sys_foo();
 long __sys_setuid(uid_t uid);
 long __sys_setgid(gid_t gid);
 long __sys_setreuid(uid_t ruid, uid_t euid);

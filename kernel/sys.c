@@ -711,7 +711,7 @@ error:
 	return retval;
 }
 
-long __sys_foo()
+long __sys_foo(void)
 {
 	return 42;
 }
