@@ -711,9 +711,14 @@ error:
 	return retval;
 }
 
-SYSCALL_DEFINE0(sys_foo)
+long __sys_foo()
 {
 	return 42;
+}
+
+SYSCALL_DEFINE0(sys_foo)
+{
+	return __sys_foo();
 }
 
 SYSCALL_DEFINE3(setresuid, uid_t, ruid, uid_t, euid, uid_t, suid)
