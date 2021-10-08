@@ -716,7 +716,7 @@ long __sys_foo()
 	return 42;
 }
 
-SYSCALL_DEFINE0(sys_foo)
+SYSCALL_DEFINE0(foo)
 {
 	return __sys_foo();
 }
